@@ -1,4 +1,3 @@
-INDEX VERSION 1.134+C:\Users\ACER.DESKTOP-VKE8R4P\Desktop\2241019235 AD\.metadata\.plugins\org.eclipse.jdt.core
+INDEX VERSION 1.134+C:\Users\ACER.DESKTOP-VKE8R4P\Desktop\MY-CODES\2241019235 AD\.metadata\.plugins\org.eclipse.jdt.core
 11015463.index
-1865797976.index
 3936374944.index
