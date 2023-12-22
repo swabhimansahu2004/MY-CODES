@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename Java project &apos;Recursion_Programs&apos; to &apos;AD_In_Class_Programs&apos;&#x0D;&#x0A;- Original element: &apos;Recursion_Programs&apos;&#x0D;&#x0A;- Renamed element: &apos;Recursion_Programs&apos;&#x0D;&#x0A;- Update references to refactored element" description="Rename Java project &apos;Recursion_Programs&apos;" flags="7" id="org.eclipse.jdt.ui.rename.java.project" input="=Recursion_Programs" name="AD_In_Class_Programs" references="true" stamp="1698997805607" version="1.0"/>
+</session>
