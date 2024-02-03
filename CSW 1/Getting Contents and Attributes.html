@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+ $("#b1").click(function(){
+ alert("Text: " + $("#par").text());
+ });
+ $("#b2").click(function(){
+ alert("HTML: " + $("#par").html());
+ });
+ $("#b3").click(function(){
+ alert("Value: " + $("#txt").val());
+ });
+ $("#b4").click(function(){
+    alert($("#go").attr("href"));
+ });
+});
+</script>
+</head>
+<body>
+        <p id="par">1.The text() method is used to assign or return any piece of text for the selected HTML elements.
+            2. The html() method is used to assign or return the content for the selected elements (markup included).
+            3. The val() method is used to assign or return any value from the fields in the HTML forms.
+        </p>
+        <p>
+            The recieve the value of HTML attributes,JQuery provides a method attr().
+        </p>
+        <a href="https://www.google.com" id="go">GET ATTRIBUTES</a>
+        <p>Username:<input type="text" id="txt" value="Value"></p>
+<button id="b1">Display Text</button>
+<button id="b2">Display HTML code</button>
+<button id="b3">Display val code</button>
+<button id="b4">Get href attribute</button>
+</body>
+</html> 

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        .outermost * {
+            display: block;
+            border: 2px solid lightgrey;
+            color: green;
+            padding: 6px;
+            margin: 20px;}
+        </style>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("ol").children().css({"color":"red","border":"5px solid blue"});
+                $("div").find("ol").css({"color":"black","border":"3px solid green"});
+                $("span").siblings().css({"color":"brown","border":"3px solid lime"});
+                $("#zeroth").next().css({"background-color":"silver","border":"3px dotted blue","color":"black"});
+                $("#first").nextAll().css({"background-color":"yellow","border":"3px dotted blue","color":"black"});
+                $("#second").nextUntil("h4").css({"background-color":"black","border":"3px dotted blue","color":"white"});
+                $("#third").prev().css({"background-color":"silver","border":"3px dotted blue","color":"black"});
+                $("#fourth").prevAll().css({"background-color":"yellow","border":"3px dotted blue","color":"black"});
+                $("#fifth").prevUntil("h2").css({"background-color":"black","border":"3px dotted blue","color":"white"});
+            });
+        </script>
+        <title>Descendent,find,next and previous functions in Jquery.</title>
+    </head>
+    <body>
+        <div class="outermost">
+            <div style="width:400px;">div (grandparent)
+            <ol>ol (parent)
+            <li>li (children)
+            <span>This is a children of li by using children() function we can find the children.
+                Similarly,children of ol is li and etc...
+            </span>
+            <h2>span and h2 are siblings</h2>
+            </li>
+            <li>
+                <h3 id="zeroth">Next of h3 is h4.</h3>
+                <h4>Which is dotted.</h4>
+                <h5 id="first">nextAll() of h5 are....</h5>
+                <h5>
+                    We use nextAll()...
+                </h5>
+                <h5>
+                    ...to get all the elements after the initial element.
+                </h5>
+            </li>
+            <li>We have used nextUntil("h4").So it should start after h1 and stop before h4.
+                <h1 id="second">h1</h1>
+                <h2>h2</h2>
+                <h3>h3</h3>
+                <h4>h4</h4>
+                <h5>h5</h5>
+            </li>
+                <li>
+                    <h3>Previous of h4 is h3.</h3>
+                    <h4 id="third">Which is dotted.</h4>
+                </li>
+                <li>
+                    <h5>prevAll() of h5 are....</h5>
+                    <h5>
+                        We use prevAll()...
+                    </h5>
+                    <h5 id="fourth">
+                        ...to get all the elements before this element.
+                    </h5>
+                </li>
+            <li>We have used prevUntil("h2").So it should start from h4 and stop till h3.
+                    <h1>h1</h1>
+                    <h2>h2</h2>
+                    <h3>h3</h3>
+                    <h4>h4</h4>
+                    <h5 id="fifth">h5</h5>
+                </li>
+            </ol>
+           </div>
+        </div>
+        <p>We have used find function in Jquery to find ol which will have a green border if found.</p>
+    </body>
+</html>

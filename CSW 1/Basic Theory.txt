@@ -1,0 +1,19 @@
+Structure Of BootStrap Enabled Webpages
+
+Step 1:
+
+<!DOCTYPE html>
+<html lang=“fr”>
+<head>
+<meta charset=“utf-7”>
+</head>
+</html>
+
+Step 2:
+
+<meta name=“viewport” content=“width=device-width, initial-scale=1”>
+
+In Bootstrap, the contents of the website are encompassed in an element known as a container. Container has two
+classes:
+ • .container
+ • .container-fluid- .container-fluid expands to the fullest width of the page’s viewport.

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Profile Upload</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container mt-5">
+  <div class="card">
+    <div class="card-header">
+      <h5 class="card-title">Upload Your Profile</h5>
+    </div>
+    <div class="card-body">
+      <form enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="firstName">First Name:</label>
+          <input type="text" class="form-control" id="firstName" name="firstName" placeholder="Enter your First Name:" required>
+        </div>
+        <div class="form-group">
+            <label for="lastName">Last Name:</label>
+            <input type="text" class="form-control" id="lastName" name="lastName" placeholder="Enter your Last Name:" required>
+          </div>
+        <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" name="email" placeholder="Enter your Email:" required>
+        </div>
+        <div class="form-group">
+          <label for="profilePicture">Profile Picture:</label>
+          <br>
+          <img src="5.jpeg" alt="Profile Picture">
+          <br><br>
+          <input type="file" class="form-control-file" id="profilePicture" name="profilePicture" accept="image/*" required>
+        </div>
+        <div class="form-group">
+          <label for="bio">Bio:</label>
+          <textarea class="form-control" id="bio" name="bio" rows="3" placeholder="Tell us about you..." required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Upload Profile</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Class Selector
+        </title>
+        <style>
+            .styling{
+                text-align: right;
+                color:green;                
+            }
+            p.styling{
+                text-align:left;
+                color:red;
+
+            }
+        </style>
+    </head>
+    <body>
+        <h1 class="styling">
+            This is a class selector.We have used .styling and p.styling.This is a heading so .styling will be implemented on this.
+        </h1>
+        <p class="styling">
+            This is a class selector.This is a paragraph so p.styling and .styling both will be implemented.Incase,both have same attributes like text-alignand their values are different then align in p.styling will be implemented.This we cannot implement on heading as it is not a paragraph so heading will always take values of .styling only.
+        </p>
+    </body>
+</html>

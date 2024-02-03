@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                $("#b1").click(function(){
+                    $("h4").append("The is Appended Part.");
+                });
+                $("#b2").click(function(){
+                    $("h4").prepend("The is Prepended Part.");
+                });
+                $("#b3").click(function(){
+                    $("h5").after("<b>This uses after function.</b>");
+                });
+                $("#b4").click(function(){
+                    $("h5").before("<i>This uses before function.</i>");
+                });
+                $("#b5").click(function(){
+                    $("#d").remove();
+                });
+                $("#b6").click(function(){
+                    $("#d").empty();
+                });
+            });
+        </script>
+        <script>
+            function appTxt() {
+                var t1 = "<p>Using Jquery to add codes</p>";
+                var t2 = $("<p></p>").text("and Append the whole code.");
+                var t3 = document.createElement("p");
+                t3.innerHTML = "Adding some content.";
+                $("body").append(t1, t2, t3);
+            }
+        </script>
+    </head>
+    <body>
+        <p>
+            We can append using Jquery.
+        </p>
+        <h4>The is the Original Line.We can also append HTML elements using append or prepend.</h4>
+        <h5>This is the original line.we are writing sentences before and after this line.</h5>
+
+        <div id="d" style="height:500px;width:500px;border:3px solid green;
+        background-color:orange;">
+        We are using div element in our example.
+        <p>A button is used for deletion.</p>
+        <p>The button calls out the remove() method to delete the element.
+           We can also do this to objects of particular class also.
+        </p>
+        </div>
+        <br>
+        <button id="b5">remove() the div element.</button>
+        <button id="b1">Append</button>
+        <button id="b2">Prepend</button>
+        <button onclick="appTxt()">Append The code.</button>
+        <button id="b3">After</button>
+        <button id="b4">Before</button>
+        <button id="b6">Empty() removes all the child elements.</button>
+    </body>
+</html>

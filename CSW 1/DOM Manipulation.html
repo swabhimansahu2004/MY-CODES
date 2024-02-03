@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            $(document).ready(function(){
+                var myElement=document.getElementById("myid");// Example: Get an element by ID
+                myElement.innerHTML="New Content";//Changing the Content of the Element
+                myElement.src="new-image.jpeg";//Changing the source of an Image
+                
+                //Creating a paragraph and appending it to the body
+                var newParagraph=document.createElement("p");
+                newParagraph.textContent="This is a new Paragraph.";
+                document.body.appendChild(newParagraph);
+
+                //removing an Element
+                myElement.parentNode.removeChild(myElement);
+                
+                //Styling Elements
+                newParagraph.style.backgroundColor="red";
+            });
+        </script>
+        <title>
+            DOM Manipulation Functions
+        </title>
+    </head>
+    <body>
+        <p>
+            DOM is a standard which is used to access HTML and
+            XML documents. Properties and methods define DOM’s programming interface. Property is something the element has and
+            method is something the element can do.
+        </p>
+        <p>
+            There are various DOM properties around but following are some of the more
+            significant ones. Let us say “n” is a node object.
+            1.n.innerHTML: This property refers to the inner text value of an HTML element “n”.
+        </p>
+    </body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ancestors</title>
+        <style>
+            .outermost * {
+             display: block;
+             border: 2px solid lightgrey;
+             color: green;
+             padding: 6px;
+             margin: 20px;}
+            </style>
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+            <script>
+            $(document).ready(function(){
+             $("#1").parent().css({"color": "blue", "border": "3px solid blue"});
+             $("#2").parents().css({"color": "black", "border": "3px solid grey"});
+             $("#3").parentsUntil("ol").css({"color": "black", "border": "3px solid red"});
+            });
+            </script>
+    </head>
+    <body>
+        <p>Ancestor refers to an element which may be a parent or grandparent of a child element. jQuery helps in traversal of the DOM
+            tree by searching any element.
+        </p>
+        <p>There are three methods in jQuery to do this - parent(), parents(), and parentsUntil().
+            <div class="outermost">
+                <div style="width:400px;">div (great-grandparent)
+                <ol>ol (grandparent)
+                <li>li (direct parent)
+                <span id="1">The just before parent of span1 have blue color border.This is parent()function.</span>
+                </li>
+                </ol>
+               </div>
+
+                <div style="width:400px;">div (grandparent)
+                <p>p (direct parent)
+                <span id="2">All Parents of span2 have grey color border.This is parents()function.</span>
+                </p>
+                </div>
+
+               <div style="width:400px">div(great-grandparent)
+                    <ol>ol (grandparent)
+                        <li>
+                            li (parent)
+                            <span id="3">All the parents untill grandparent are colored red border.
+                                         We have to give the HTML element name inside ParentsUntil("").
+                                         This does not include the given parent.
+                                         This is parentUntill()function.
+                            </span>
+                        </li>
+                    </ol>
+                </div>
+            </div>
+        </p>
+    </body>
+</html>

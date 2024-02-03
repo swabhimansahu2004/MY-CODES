@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Q7</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js">
+    </script>
+    <style>
+        table,th,tr,td{
+            border: 1px solid black;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align:center;"><u>Checkout Form</u></h2>
+    <div class="container">
+        <div class="jumbotron">
+            <h3>Your Cart</h3>
+            <table style="width:100%;">
+                <tr>
+                    <th style="width: 10%;">Sl.No.</th>
+                    <th style="width:40%">Product Name</th>
+                    <th style="width:30%">Quantity</th>
+                    <th style="width:30%">Price</th>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>Detergent</td>
+                    <td>3kg</td>
+                    <td>$10</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>Biscuits</td>
+                    <td>5 Packets</td>
+                    <td>$7</td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>Shampoo</td>
+                    <td>2 Bottles</td>
+                    <td>$23</td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td>Grains</td>
+                    <td>10 kg</td>
+                    <td>$100</td>
+                </tr>
+                <tr>
+                    <td>5.</td>
+                    <td>Ediblle Oil</td>
+                    <td>10 litres</td>
+                    <td>$90</td>
+                </tr>
+            </table>
+            <h5><strong>Total Price : $230</strong></h5>
+            <hr>
+            <p>Please fillup the form given below and complete the payment process.</p>
+        </div>
+        <form action="/action_page.php">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="name" class="form-control" id="name" placeholder="Enter your Name:" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter your Email:" required>
+            </div>
+            <div class="form-group">
+                <label for="address">Address:</label>
+                <input type="address" class="form-control" id="address" placeholder="Enter your Address:" required>
+            </div>
+            <div class="form-group">
+                <label for="country">Country:</label>
+                <input type="name" class="form-control" id="country" placeholder="Country:" required>
+            </div>
+            <div class="form-group">
+                <label for="State">State:</label>
+                <input type="name" class="form-control" id="state" placeholder="State:" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Mobile Number:</label>
+                <input type="phone" class="form-control" id="phone" placeholder="Enter your Mobile Number:" required>
+            </div>
+            <div class="form-group form-check">
+                <label for="form-check-label"></label>
+                <input type="checkbox" class="radio" value="1" name="shipping">Shipping Address will be same as Billing address
+            </div>
+            <hr>
+            <label for="pay">Payment Method:</label>
+            <select name="pay" id="pay">
+                <option value="Pay">Payment</option>
+                <option value="Credit Card">Credit Card</option>
+                <option value="Debit Card">Debit Card</option>
+                <option value="UPI">UPI</option>
+                <option value="COD">Cash On Delivery</option>
+            </select>
+            <hr>
+            <h3>When Paying by Credit card or Debit Card</h3>
+            <div class="form-group">
+                <label for="name on card">Name on Card:</label>
+                <input type="name" class="form-control" id="name on card" placeholder="Name on Card">
+            </div>
+            <div class="form-group">
+                <label for="card number">Card Number:</label>
+                <input type="number" class="form-control" id="card number" placeholder="Card Number">
+            </div>
+            <div class="form-group">
+                <label for="expiration">Expiration:</label>
+                <input type="number" class="form-control" id="expiration" placeholder="Expiration Date">
+            </div>
+            <div class="form-group">
+                <label for="cvv">CVV:</label>
+                <input type="number" class="form-control" id="cvv" placeholder="CVV">
+            </div>
+            <hr>
+            <h3>When Paying by UPI</h3>
+            <div class="form-group">
+                <label for="upi id">UPI ID:</label>
+                <input type="name" class="form-control" id="upi id" placeholder="UPI ID">
+            </div>
+            <button type="submit" class="btn btn-success">Submit</button>
+        </form>
+        <br>
+        <h1 style="text-align: center;">Thank You For Shopping</h1>
+        <br>
+        <br>
+    </div>
+    
+</body>

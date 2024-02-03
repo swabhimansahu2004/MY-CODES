@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+<script>
+$(document).ready(function(){
+    $("#callback").click(function(){
+        $("h1").hide(3000, function(){
+            alert("The heading has disappeared."); 
+        });
+    });
+    $("#chain").click(function(){
+        $("h2").css("color","blue").slideUp(2000).slideDown(2000);
+    });
+});
+</script>
+</head>
+<body>
+<button id="callback">Callback</button>
+<h1>Callback Function</h1>
+<button id="chain">Chaining</button>
+<h2>This functions contains chain of multiple functions.</h2>
+</body></html> 
